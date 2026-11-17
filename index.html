@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parivridh Satheesh - Resume</title>
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== Element selectors ===== */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #fdf6ec;
+            color: #333333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin: 10px 0 5px 0;
+        }
+
+        h2 {
+            color: #7b1e3a;
+            border-bottom: 2px solid #e0b973;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #7b1e3a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #7b1e3a;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #faf0e0;
+        }
+
+        /* ===== ID selectors ===== */
+        #header {
+            background-color: #7b1e3a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        #header img {
+            border-radius: 50%;
+            border: 3px solid #e0b973;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #5a1529;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        #navbar a:hover {
+            color: #e0b973;
+        }
+
+        #footer {
+            text-align: center;
+            background-color: #7b1e3a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* ===== Class selectors ===== */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #e0b973;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            background-color: #e0b973;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .btn {
+            background-color: #7b1e3a;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #5a1529;
+        }
+
+        input, select, textarea {
+            font-family: 'Poppins', Arial, sans-serif;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <!-- Put your photo in the same folder and name it photo.jpg -->
+        <img src="photo.jpg" alt="My photo" width="110" height="110">
+        <h1>Parivridh Satheesh</h1>
+        <p class="tagline">18 year old student from Bengaluru</p>
+    </div>
+
+    <!-- Navigation bar (flexbox) -->
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="card" id="about">
+            <h2>About Me</h2>
+            <ul>
+                <li>Name: Parivridh Satheesh</li>
+                <li>Age: 18</li>
+                <li>Currently studying
+                    <ul>
+                        <li>at <i>St. Joseph's College of Commerce (SJCC)</i>, 2nd semester</li>
+                        <li>BBA in <i>Digital Business and Entrepreneurship</i> (IIMB, online)</li>
+                    </ul>
+                </li>
+                <li>I like solving problems and working in teams</li>
+            </ul>
+        </div>
+
+        <div class="card" id="education">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>Undergraduate degree</td>
+                    <td>St. Joseph's College of Commerce, Bengaluru</td>
+                    <td>2026 - present</td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td>BBA (Digital Business and Entrepreneurship)</td>
+                    <td>IIM Bangalore (online)</td>
+                    <td>2026 - present</td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td>Class 12 (CBSE)</td>
+                    <td>Delhi Public School</td>
+                    <td>2026</td>
+                    <td>88%</td>
+                </tr>
+                <tr>
+                    <td>Class 10 (CBSE)</td>
+                    <td>Delhi Public School</td>
+                    <td>2024</td>
+                    <td>77%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card" id="skills">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Microsoft Excel</li>
+                <li>PowerPoint</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+
+        <div class="card" id="projects">
+            <h2>My Projects</h2>
+            <ol>
+                <li>Made this resume website</li>
+                <li>Cafe survey with Excel charts</li>
+                <li>College fest event page</li>
+            </ol>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:parivridh@example.com">parivridh@example.com</a></p>
+            <form>
+                Enter your name : <input type="text" name="name"><br><br>
+                Enter your Email : <input type="email" name="email"><br><br>
+                Reason for contact :
+                <select name="reason">
+                    <option>-- please select --</option>
+                    <option>Internship</option>
+                    <option>Project</option>
+                    <option>Just saying hi</option>
+                </select><br><br>
+                Message : <br>
+                <textarea name="message" rows="4" cols="30"></textarea><br><br>
+                Are you a :
+                <input type="radio" name="type" id="student"> <label for="student">Student</label>
+                <input type="radio" name="type" id="recruiter"> <label for="recruiter">Recruiter</label><br><br>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2026 Parivridh Satheesh</p>
+    </div>
+
+</body>
+</html>
